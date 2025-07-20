@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 告诉浏览器这是一个HTML5文档，必须放在文件最开头 -->
+<html lang="zh-CN">
+<!-- html标签是所有HTML元素的根元素，lang="zh-CN"表示网页主要语言是简体中文 -->
+
+<head>
+    <!-- head标签里放的是网页的"配置信息"，用户看不到，但对浏览器很重要 -->
+    <meta charset="UTF-8">
+    <!-- 设置网页的文字编码为UTF-8（一种支持中文、表情符号等的编码方式） -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 非常重要的移动端适配标签：
+         - width=device-width：让网页宽度自动适应设备屏幕宽度
+         - initial-scale=1.0：初始缩放比例为100%（不放大不缩小） -->
+
+    <link rel="icon" href="/favicon.ico">
+    <!-- 设置浏览器标签页上的小图标：
+         - rel="icon"表示这是图标文件
+         - href="/favicon.ico"表示图标文件在网站根目录，名字叫favicon.ico
+         你可以把.ico格式的图标文件放在这里 -->
+
+    <title>语音情感标注系统</title>
+    <!-- 设置浏览器标签页上显示的标题文字 -->
+</head>
+<body>
+    <!-- body标签里放的是用户能看到的所有网页内容 -->
+
+    <div id="app"></div>
+    <!-- 这是一个空的div容器，id="app"是给它的唯一标识
+         通常JavaScript框架（比如Vue/React）会把这个div当作"根容器"，
+         把网页内容动态插入到这里 -->
+
+    <script type="module" src="/src/main.js"></script>
+    <!-- 引入JavaScript文件：
+         - type="module"表示这是现代JavaScript模块（可以import其他文件）
+         - src="/src/main.js"表示从网站的/src/main.js路径加载
+         这个main.js会负责生成网页的实际内容 -->
+</body>
+</html>

@@ -1,0 +1,8 @@
+src里存放的是源代码
+assets:资源文件
+components:组件
+views:视图
+router:路由
+store:状态管理
+App.vue:主组件
+main.js:入口文件

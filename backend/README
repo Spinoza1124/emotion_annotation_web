@@ -1,0 +1,6 @@
+main.py:入口文件
+models:数据库模型
+routers:API路由
+schemas:Pydantic模式
+services:业务逻辑
+utils:工具函数
