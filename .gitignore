@@ -13,7 +13,8 @@ wheels/
 audio_files/
 
 # trae
-.trae/
+.trae
+.vercel
 
 # Node.js dependencies
 node_modules/
